@@ -139,7 +139,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             isGrounded = true;
         }
-        if (collision.gameObject.name == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy") == true)
         {
             GameBehavior.showLoseScreen = true;
         }
